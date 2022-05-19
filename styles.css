@@ -1,0 +1,44 @@
+body {
+	background-color: #DFF;
+	font-family: sans-serif;
+}
+
+canvas {
+	background-color: #EEE;
+}
+
+button {
+	background: none;
+	border: none;
+	padding: 0px;
+	margin: 0px;
+	
+	color: #00F;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+#result {
+	width: 97%;
+	word-wrap: break-word;
+}
+
+table {
+	border: 1px solid black;
+}
+
+td, th {
+	padding: 2px;
+	text-align: center;
+	border: 1px solid gray;
+}
+
+th {
+	padding-left: 6px;
+	padding-right: 6px;
+}
+
+.aliasedChar {
+	font-style: italic;
+	color: #00A;
+}

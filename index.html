@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title>Huffman Encoder - NERDfirst Resources</title>
+		<meta name="description" content="Experience Huffman Coding right here in your browser! Enter any text and it will construct a huffman tree and show you the space savings!"></meta>
+	
+		<link rel="stylesheet" href="styles.css">
+		<script src="heap.js"></script>
+		<script src="huffman.js"></script>
+		<script src="draw.js"></script>
+		<script src="logic.js"></script>
+	</head>
+	<body>
+		<h1>Huffman Encoder</h1>
+		<div id="description">
+			<p>
+				<a href="https://www.youtube.com/watch?v=fPthQE7Li8M">Huffman Coding</a> is a way to generate a highly efficient <strong>prefix code</strong> specially customized to a piece of input data. It makes use of several pretty complex mechanisms under the hood to achieve this!
+			</p>
+			<p>
+				Download the code from the following BitBucket repository: <a href="https://bitbucket.org/nerdfirst/huffman-encoding-simulator">Code download</a>
+			</p>
+			<p>
+				Warning: If you supply an extremely long or complex string to the encoder, it may cause your browser to become temporarily unresponsive as it is hard at work crunching the numbers. Also note that the huffman tree image generated may become very wide, and as such very large (in terms of file size). You have been warned. Start small.
+			</p>
+			<p>
+				Like what you're seeing? Consider sending in a donation at <a href="http://nerdfirst.net/donate">http://nerdfirst.net/donate</a>!
+			</p>
+			<button id="hideDescBtn">[Hide Description]</button>
+		</div>
+		<button id="showDescBtn" style="display:none">[Show Description]</button>
+		
+		<br>
+	
+		<div id="inputPanel">
+			<textarea id="inputField" placeholder="Your text here" cols=80 rows=5></textarea>
+			<label><input type="checkbox" id="convertCaseCB" checked></input>Everything to same case</label>
+			<input type="button" id="encodeBtn" value="Encode"></input>
+		</div>
+
+		<div id="result"></div>
+	</body>
+</html>
